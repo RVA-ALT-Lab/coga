@@ -25,3 +25,59 @@ p {
 	font-size: 1.8em;
 	font-weight: 800;
 }
+
+
+
+/*main content elements*/
+
+
+.entry-content .nav-button h2 {
+	font-size: 1.5em;
+	border-bottom: none;
+	background-color: $orange;
+	color: #fff;
+	padding: 20% 20px;
+	height: auto;
+	display: block;	
+	margin-bottom: 30px;
+	transition: .3s all;
+}
+
+.entry-content .nav-button h2:hover {
+	background-color: $gray;	
+}
+
+.entry-content .nav-button a:hover {
+	text-decoration: none;
+}
+
+.list-box {
+	margin: 30px 5px;
+    //border: 1px solid $light-blue;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19)
+}
+
+.list-box ul {
+	list-style-type: none;
+	font-size: 1.3em;
+	list-style-position: outside;
+}
+
+.list-box li::before {
+	font-family: "FontAwesome"; 
+	font-weight: 900; 
+	content: "\f101";
+	margin-right: 10px;
+	color: $orange;
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-primary a {
+	color: #fff;
+}
