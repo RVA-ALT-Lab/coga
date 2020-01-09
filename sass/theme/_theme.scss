@@ -1,0 +1,27 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+h1, h2, h3, h4, h5, .navbar-brand {
+	color: $gray;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.entry-content h2 {
+	border-bottom: 2px solid $orange;	
+	margin-top: 25px;
+	margin-bottom: 12px;
+	display: block;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+	color: #424242;
+	line-height: 1.3em;
+}
+
+/*header stuff*/
+.navbar-brand {
+	font-size: 1.8em;
+	font-weight: 800;
+}
