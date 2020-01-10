@@ -21,11 +21,19 @@ p {
 }
 
 /*header stuff*/
+.navbar {
+	padding: 0;
+}
+
 .navbar-brand {
 	font-size: 1.8em;
 	font-weight: 800;
+	padding-left: 10px;
 }
 
+.dna-small {
+	height: 60px;
+}
 
 
 /*main content elements*/
@@ -80,4 +88,38 @@ p {
 
 .btn-primary a {
 	color: #fff;
+}
+
+.progress-row {
+	padding: 15px;
+}
+
+.progress-box {	
+	margin-top: 20px;
+	padding: 15px;
+	background-color: $blue;	
+}
+
+.progress-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: border-box;
+  border: 5px solid $orange;
+  transform: translate(10px, 10px);
+  transition: transform 150ms;
+}
+
+.progress-box h3 {
+	color: $light-blue;
+}
+
+.progress-box p{	
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	font-size: 1.2em;
 }

@@ -38,6 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
+				<img src="<?php echo get_template_directory_uri()?>/imgs/dna_little.svg" class="dna-small">
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
