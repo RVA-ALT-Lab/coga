@@ -185,3 +185,14 @@ p {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+/*footer*/
+
+#wrapper-footer-full, #wrapper-static-hero {
+	background-color: $blue;
+	color: #fff;
+}
+
+#wrapper-footer-full h3, #wrapper-static-hero h3 {
+	color: #fff;
+} 
