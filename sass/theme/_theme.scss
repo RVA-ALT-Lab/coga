@@ -49,6 +49,7 @@ p {
 	display: block;	
 	margin-bottom: 30px;
 	transition: .3s all;
+	text-align: center;
 }
 
 .entry-content .nav-button h2:hover {
@@ -85,6 +86,7 @@ p {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+
 
 .btn-primary a {
 	color: #fff;
@@ -124,4 +126,45 @@ p {
 	font-family: 'Varela Round', sans-serif;
 	color: #fff;
 	font-size: 1.2em;
+}
+
+/*Fancy Images*/
+
+.img-frame {
+	position: relative;
+}
+
+.img-frame img {
+	mix-blend-mode: hard-light;
+	filter: saturate(0);
+}
+
+.img-frame.wash::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.img-frame.orange{
+	background-color: $orange;
+}
+
+.img-frame.blue{
+	background-color: $blue;
+}
+
+.img-frame.light-blue{
+	background-color: $light-blue;
+}
+
+/*buttons*/
+
+.coga-button {
+	display: block;
+	margin: 20px auto;
 }
