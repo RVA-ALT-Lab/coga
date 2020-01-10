@@ -20,7 +20,7 @@ p {
 	line-height: 1.3em;
 }
 
-/*header stuff*/
+/*navbar stuff*/
 .navbar {
 	padding: 0;
 }
@@ -35,6 +35,17 @@ p {
 	height: 60px;
 }
 
+.navbar-dark .navbar-nav .nav-link  {
+	color: #fff;
+}
+
+.menu-item {
+	border-bottom: 2px solid $blue;
+}
+
+.current-menu-item {
+	border-bottom: 2px solid $orange;
+}
 
 /*main content elements*/
 
@@ -167,4 +178,10 @@ p {
 .coga-button {
 	display: block;
 	margin: 20px auto;
+}
+
+/*sidebar*/
+.widget-area aside {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
