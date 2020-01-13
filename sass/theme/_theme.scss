@@ -182,7 +182,7 @@ p {
 
 /*sidebar*/
 .widget-area aside {
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 }
 
@@ -193,7 +193,7 @@ p {
 }
 
 .widget-area li::before{
-	    font-family: FontAwesome;
+	font-family: FontAwesome;
     font-weight: 900;
     content: "\f101";
     margin-right: 10px;
@@ -203,7 +203,19 @@ p {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    transition: .5s;
+    position: absolute;
+    left: 17px;
 }
+
+.widget-area li:hover::before{
+	left: 20px;
+}
+
+.widget-area li{
+	padding-left: 15px;
+}
+
 
 /*footer*/
 
