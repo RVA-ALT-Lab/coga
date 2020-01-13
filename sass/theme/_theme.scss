@@ -82,7 +82,14 @@ p {
 .list-box ul {
 	list-style-type: none;
 	font-size: 1.3em;
-	list-style-position: outside;
+	margin-left: 25px;
+	padding-left: 0;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.list-box li {
+	margin-bottom: 10px
 }
 
 .list-box li::before {
@@ -96,6 +103,8 @@ p {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    position: absolute;
+    left: 45px;
 }
 
 
@@ -239,12 +248,26 @@ p {
 	padding-left: 15px;
 }
 
+.widget-area li a {
+	padding: 0 10px 0 10px;
+	display: block;
+}
+
+.widget-area li a:hover{
+	background-color: #fff;
+	text-decoration: none;
+}
 
 /*footer*/
 
+#wrapper-footer {
+	padding-bottom: 0;
+}
+
 #wrapper-footer-full, #wrapper-static-hero {
-	background-color: $blue;
-	color: #fff;
+	border-top: 3px solid #efefef;
+	background-color: #efefef;
+	color: $blue;
 }
 
 #wrapper-footer-full h3, #wrapper-static-hero h3 {
