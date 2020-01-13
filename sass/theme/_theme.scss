@@ -237,15 +237,16 @@ p {
     -webkit-font-smoothing: antialiased;
     transition: .5s;
     position: absolute;
-    left: 17px;
+    left: 22px;
 }
 
 .widget-area li:hover::before{
-	left: 20px;
+	left: 26px;
 }
 
 .widget-area li{
 	padding-left: 15px;
+	margin-bottom: 5px;
 }
 
 .widget-area li a {
@@ -260,14 +261,18 @@ p {
 
 /*footer*/
 
-#wrapper-footer {
-	padding-bottom: 0;
+#wrapper-footer{
+	padding: 0;
 }
 
 #wrapper-footer-full, #wrapper-static-hero {
 	border-top: 3px solid #efefef;
 	background-color: #efefef;
 	color: $blue;
+}
+
+#footer-full-content {
+	padding-top: 50px;
 }
 
 #wrapper-footer-full h3, #wrapper-static-hero h3 {
