@@ -160,7 +160,8 @@ p {
  width: 100vw;
  position: relative;
  margin-left: -50vw;
- margin-top: 100px;
+ padding-top: 50px;
+ padding-bottom: 50px;
  left: 50%;
 }
 
@@ -183,6 +184,7 @@ p {
 
 .img-frame {
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .img-frame img {
