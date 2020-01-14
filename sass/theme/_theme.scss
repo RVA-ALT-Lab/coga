@@ -74,11 +74,12 @@ p {
 .list-box {
 	margin: 30px 5px;
     //border: 1px solid $light-blue;
-    padding: 20px;
+    padding: 30px;
     // box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
     // -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19)
     background-color: #fff;
     height: 100%;
+    border-radius: 10px;
 }
 
 .list-box ul {
@@ -107,7 +108,7 @@ p {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     position: absolute;
-    left: 45px;
+    left: 60px;
 }
 
 .list-box i {
@@ -221,7 +222,7 @@ p {
     width: 160px;
     height: 160px;
     padding: 10px;
-    margin: -60px auto 50px auto;
+    margin: -60px auto 20px auto;
     border-radius: 50%;
     display: block;
     background-color: #fff;
