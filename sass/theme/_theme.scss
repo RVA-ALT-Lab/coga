@@ -156,6 +156,12 @@ p {
 	font-size: 1.2em;
 }
 
+.super-text {
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
 /*ROWS*/
 
 .full-width-div {
@@ -164,6 +170,8 @@ p {
  margin-left: -50vw;
  padding-top: 50px;
  padding-bottom: 150px;
+ padding-left: 20px;
+ padding-right: 20px;
  left: 50%;
 }
 
@@ -349,6 +357,7 @@ p {
 .listing-item .title {
 	font-size: 1.4em;
 	display:block;
+	font-family: 'Varela Round', sans-serif;
 }
 .listing-item .understrap-read-more-link, .listing-item .excerpt-dash {
 	display:none;
