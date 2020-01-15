@@ -370,3 +370,28 @@ p {
 #top-row {
 	padding-bottom: 50px;
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+	.full-width-div .col-md-6 {
+		margin-bottom: 50px;
+	}
+	.list-box {
+		margin-top: 70px;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+
+}
+
