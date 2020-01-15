@@ -51,7 +51,6 @@ p {
 
 
 .entry-content .nav-button h2 {
-	font-size: 1.5em;
 	border-bottom: none;
 	background-color: $orange;
 	color: #fff;
@@ -61,6 +60,7 @@ p {
 	margin-bottom: 30px;
 	transition: .3s all;
 	text-align: center;
+	border-radius: 10px;
 }
 
 .entry-content .nav-button h2:hover {
@@ -304,6 +304,23 @@ p {
 	text-decoration: none;
 }
 
+/*order list*/
+.big-icon img {
+	width: 60%;
+    height: 60%;
+    margin: auto;
+    display: block;
+    border: 4px solid $light-blue;
+    border-radius: 50%;
+   // background-color: $light-blue;
+    z-index: 1;  
+}
+
+.progress-row .col-md-6{
+	border-right: 2px solid $gray;
+}
+
+
 /*footer*/
 
 #wrapper-footer{
@@ -323,3 +340,24 @@ p {
 #wrapper-footer-full h3, #wrapper-static-hero h3 {
 	color: #fff;
 } 
+
+/*TEMP CSS DEPENDING ON KEEPING DISPLAY POSTS OR NOT ETC*/
+.display-posts-listing {
+	margin-top: 54px;
+}
+
+.listing-item .title {
+	font-size: 1.4em;
+	display:block;
+}
+.listing-item .understrap-read-more-link, .listing-item .excerpt-dash {
+	display:none;
+}
+
+#front-image {
+	margin-top:-60px !important;
+}
+
+#top-row {
+	padding-bottom: 50px;
+}
