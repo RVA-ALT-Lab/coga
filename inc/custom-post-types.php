@@ -21,8 +21,8 @@ function create_fact_cpt() {
   $labels = array(
     'name' => __( 'Facts', 'Post Type General Name', 'textdomain' ),
     'singular_name' => __( 'Fact', 'Post Type Singular Name', 'textdomain' ),
-    'menu_name' => __( 'Fact', 'textdomain' ),
-    'name_admin_bar' => __( 'Fact', 'textdomain' ),
+    'menu_name' => __( 'Facts', 'textdomain' ),
+    'name_admin_bar' => __( 'Facts', 'textdomain' ),
     'archives' => __( 'Fact Archives', 'textdomain' ),
     'attributes' => __( 'Fact Attributes', 'textdomain' ),
     'parent_item_colon' => __( 'Fact:', 'textdomain' ),
@@ -67,7 +67,7 @@ function create_fact_cpt() {
     'show_in_rest' => true,
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_icon' => 'dashicons-lightbulb',
   );
   register_post_type( 'fact', $args );
   

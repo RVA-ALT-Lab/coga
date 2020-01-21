@@ -98,7 +98,7 @@ function home_news(){
   if ( $the_query->have_posts() ) :
     while ( $the_query->have_posts() ) : $the_query->the_post();
       // Do Stuff
-      echo '<div class="news-item"><a href="#"><h3 class="news-title">'.get_the_title() . '</h3></a>';
+      echo '<div class="news-item"><a href="' . get_the_permalink() . '"><h3 class="news-title">'.get_the_title() . '</h3></a>';
       echo get_the_excerpt() . '</div>';
 
     endwhile;

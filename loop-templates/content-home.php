@@ -52,7 +52,7 @@ defined( 'ABSPATH' ) || exit;
 				<p>Look to us to see what’s going on in the realm of genetics and alcoholism.
 				</p></div>
 			<div class="col-md-8">
-				<div class="display-posts-listing">
+				<div class="display-news-posts">
 					<?php home_news();?>
 				</div>
 			</div>
