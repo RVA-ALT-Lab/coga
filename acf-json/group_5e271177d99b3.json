@@ -93,7 +93,7 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "layout": "block",
             "button_label": "",
             "sub_fields": [
                 {
@@ -135,6 +135,28 @@
                     "delay": 0
                 }
             ]
+        },
+        {
+            "key": "field_5e2724e1b6d82",
+            "label": "Home News",
+            "name": "home_news",
+            "type": "taxonomy",
+            "instructions": "Choose the category of posts to show here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -154,5 +176,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579623432
+    "modified": 1579626617
 }

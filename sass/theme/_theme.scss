@@ -354,13 +354,15 @@ p {
 	margin-top: 54px;
 }
 
-.listing-item .title {
+h3.news-title {
 	font-size: 1.4em;
 	display:block;
 	font-family: 'Varela Round', sans-serif;
+	color: #046b99;
 }
-.listing-item .understrap-read-more-link, .listing-item .excerpt-dash {
-	display:none;
+
+.news-item .understrap-read-more-link {
+	display: none;
 }
 
 #front-image {

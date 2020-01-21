@@ -46,6 +46,18 @@ defined( 'ABSPATH' ) || exit;
 			<!--INFO PANELS-->
 			<?php home_info_panels();?>
 		</div>
+		<div class="row">
+			<div class="col-md-4 entry-content">
+				<h2>News</h2>
+				<p>Look to us to see what’s going on in the realm of genetics and alcoholism.
+				</p></div>
+			<div class="col-md-8">
+				<div class="display-posts-listing">
+					<?php home_news();?>
+				</div>
+			</div>
+		</div>
+		
 
 		<?php the_content(); ?>
 

@@ -76,3 +76,4 @@ function create_fact_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_fact_cpt', 0 );
+

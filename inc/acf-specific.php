@@ -85,5 +85,28 @@ function home_nav_menu (){
     endif;
     
   }
+
+function home_news(){
+  $cat_id = get_field('home_news');
+  $args = array(
+    'cat' => $cat_id,
+    'posts_per_page' => 3,
+    );
+  $the_query = new WP_Query( $args );
+ 
+
+  if ( $the_query->have_posts() ) :
+    while ( $the_query->have_posts() ) : $the_query->the_post();
+      // Do Stuff
+      echo '<div class="news-item"><a href="#"><h3 class="news-title">'.get_the_title() . '</h3></a>';
+      echo get_the_excerpt() . '</div>';
+
+    endwhile;
+  endif;
+  // Reset Post Data
+  wp_reset_postdata();
+}
+
+  //END check for ACF
  
 }
