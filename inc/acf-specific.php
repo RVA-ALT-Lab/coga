@@ -126,10 +126,18 @@ function fact_builder($cat_id){
     if ( $the_query->have_posts() ) :
       while ( $the_query->have_posts() ) : $the_query->the_post();
         // Do Stuff
+        $the_icon = get_field('fact_icon');
+        $the_url = get_field('fact_url');
+        if ($the_url != ''){
+           $fact_title = '<a href="' . get_the_permalink() . '"><h3>'.get_the_title() . '</h3></a>';
+        } else {
+          $fact_title = '<h3>'.get_the_title() . '</h3>';
+        }
+
         echo '<div class="col-md-4">';
-        echo '<div class="list-box"><div class="big-emoji"><img src="http://rampages.us/coga/wp-content/uploads/sites/35103/2020/01/noun_Baby_1897058.png" alt="" width="100%" height="auto" class="aligncenter size-thumbnail wp-image-148 img-fluid"></div>';
-        echo '<a href="' . get_the_permalink() . '"><h3>'.get_the_title() . '</h3></a>';
-        echo '<p>' . get_the_content() . '</p></div></div></div>';
+        echo '<div class="list-box"><div class="big-emoji"><img src="'.$the_icon.'" alt="" width="100%" height="auto" class="aligncenter size-thumbnail wp-image-148 img-fluid"></div>';
+        echo $fact_title;
+        echo '<p>' . get_the_content() . '</p></div></div>';
 
       endwhile;
     endif;
