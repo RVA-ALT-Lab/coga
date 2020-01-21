@@ -87,26 +87,56 @@ function home_nav_menu (){
   }
 
 function home_news(){
-  $cat_id = get_field('home_news');
-  $args = array(
-    'cat' => $cat_id,
-    'posts_per_page' => 3,
-    );
-  $the_query = new WP_Query( $args );
- 
+    $cat_id = get_field('home_news');
+    $args = array(
+      'cat' => $cat_id,
+      'posts_per_page' => 3,
+      );
+    $the_query = new WP_Query( $args );
+   
 
-  if ( $the_query->have_posts() ) :
-    while ( $the_query->have_posts() ) : $the_query->the_post();
-      // Do Stuff
-      echo '<div class="news-item"><a href="' . get_the_permalink() . '"><h3 class="news-title">'.get_the_title() . '</h3></a>';
-      echo get_the_excerpt() . '</div>';
+    if ( $the_query->have_posts() ) :
+      while ( $the_query->have_posts() ) : $the_query->the_post();
+        // Do Stuff
+        echo '<div class="news-item"><a href="' . get_the_permalink() . '"><h3 class="news-title">'.get_the_title() . '</h3></a>';
+        echo get_the_excerpt() . '</div>';
 
-    endwhile;
-  endif;
-  // Reset Post Data
-  wp_reset_postdata();
+      endwhile;
+    endif;
+    // Reset Post Data
+    wp_reset_postdata();
+  }
+
+
+function home_facts(){
+    $cat_id = get_field('home_facts');
+    return $cat_id;
 }
 
+function fact_builder($cat_id){
+   $args = array(
+      'cat' => $cat_id,
+      'posts_per_page' => 3,
+      'post_type' => array('fact'),
+      'post_status' => array('publish'),
+      );
+    $the_query = new WP_Query( $args );
+   
+
+    if ( $the_query->have_posts() ) :
+      while ( $the_query->have_posts() ) : $the_query->the_post();
+        // Do Stuff
+        echo '<div class="col-md-4">';
+        echo '<div class="list-box"><div class="big-emoji"><img src="http://rampages.us/coga/wp-content/uploads/sites/35103/2020/01/noun_Baby_1897058.png" alt="" width="100%" height="auto" class="aligncenter size-thumbnail wp-image-148 img-fluid"></div>';
+        echo '<a href="' . get_the_permalink() . '"><h3>'.get_the_title() . '</h3></a>';
+        echo '<p>' . get_the_content() . '</p></div></div></div>';
+
+      endwhile;
+    endif;
+    // Reset Post Data
+    wp_reset_postdata();
+}
+
+
   //END check for ACF
- 
 }

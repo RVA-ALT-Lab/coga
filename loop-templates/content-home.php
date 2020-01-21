@@ -57,6 +57,14 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 			</div>
 		</div>
+		<div class="row row-orange full-width-div">
+			<div class="col-md-12">
+				<div class="super-text white">Did you know?</div>
+			</div>
+			<?php 
+			$cat_id = home_facts();
+			fact_builder($cat_id);?>
+		</div>
 		
 
 		<?php the_content(); ?>
