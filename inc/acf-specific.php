@@ -41,4 +41,29 @@ if (is_plugin_active( 'advanced-custom-fields-pro/acf.php'))  {
       
   }
 
+  function home_intro_text(){
+    $intro_text = get_field('intro_text');
+    echo $intro_text;
+  }
+
+
+
+function home_nav_menu (){
+  if( have_rows('main_navigation_menu') ):
+
+  // loop through the rows of data
+    while ( have_rows('main_navigation_menu') ) : the_row();
+        echo '<div class="col-md-4 nav-button">';
+        echo '<a href="' . get_sub_field('nav_url') . '">' ;       
+        echo '<h2>' . get_sub_field('nav_title') . '</h2></a>';
+        echo '</div>';
+    endwhile;
+
+    else :
+
+        // no rows found
+
+    endif;
+  }
+ 
 }
