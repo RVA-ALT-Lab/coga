@@ -34,10 +34,17 @@ defined( 'ABSPATH' ) || exit;
 			<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full');?>" alt="A portrait of the COGA participants with the COGA logo." width="100%" height="auto" class="aligncenter size-full wp-image-82 img-fluid" id="front-image">
 		</div>
 		
+		<!--INTRO TEXT-->
 		<?php home_intro_text();?>
 
 		<div class="row nav-row">
+			<!--BIG MID PAGE MENU-->
 			<?php home_nav_menu();?>
+		</div>
+
+		<div class="row row-light-blue full-width-div">
+			<!--INFO PANELS-->
+			<?php home_info_panels();?>
 		</div>
 
 		<?php the_content(); ?>
