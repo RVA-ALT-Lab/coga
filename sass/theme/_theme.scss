@@ -328,6 +328,86 @@ p {
 	border-right: 2px solid $gray;
 }
 
+/*vertical progression box*/
+.progression-holder {
+  margin: 40px auto;
+  max-width: 500px;
+  background-color: #046b99;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.1);
+ 
+}
+
+.progression-holder h3 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #b3efff;
+    font-size: 2em;
+    font-family: 'Varela Round',sans-serif;
+    margin-top: 30px;
+}
+
+.progression-item {
+    padding: 40px;
+    position: relative;
+}
+
+.final {
+	border-bottom-right-radius: 15px; 
+	border-bottom-left-radius: 15px; 
+}
+
+.progression-holder p {
+  font-family: 'Varela Round',sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.progression-holder .white {
+  background-color: #fff; 
+}
+
+.progression-holder .white.arrow:after {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 50px solid #fff;
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  left: 20%;
+  z-index: 10;
+}
+
+
+.progression-holder .white h3 {
+  color: #4C4E53;
+}
+
+.progression-holder .white p {
+  color: #4C4E53;
+}
+
+
+.arrow:after {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 50px solid #046b99;
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  left: 20%;
+  z-index: 10;
+}
+
+
 
 /*footer*/
 

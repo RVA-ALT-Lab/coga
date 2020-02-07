@@ -10,8 +10,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if (is_plugin_active( 'advanced-custom-fields-pro/acf.php'))  {
- 
+   
  //ACF JSON SAVER
   add_filter('acf/settings/save_json', 'coga_json_save_point');
    
@@ -147,4 +146,4 @@ function fact_builder($cat_id){
 
 
   //END check for ACF
-}
+
