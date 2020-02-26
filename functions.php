@@ -32,3 +32,43 @@ $understrap_includes = array(
 foreach ( $understrap_includes as $file ) {
 	require_once get_template_directory() . '/inc' . $file;
 }
+
+
+function get_researcher_generic($field_name){
+	if(get_field($field_name)){
+		return get_field($field_name);
+	}
+}
+
+
+function get_researchers(){
+  global $post;
+  $html = '';
+            $args = array(
+                      'posts_per_page' => -1,
+                      'post_type'   => 'researcher', 
+                      'post_status' => 'publish',
+                      // 'category_name' => $cat,
+                    );
+        
+                    $the_query = new WP_Query( $args );
+                    if( $the_query->have_posts() ): 
+                      $html .= '<div class="row">';	
+                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                      $html .= '<div class="col-md-3 team-square">';                                              
+                      $html .= '<a href="'.get_the_permalink().'"><div class="card><div class="card-body">';
+                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid','researcher-bio-pic') );                      
+                      $html .= '<h3 class="researcher-title">';
+                      $html .=  get_the_title(); ;                      
+                      $html .= '</h3></a>';
+                      $html .= '</div>';  
+                      $html .= '</div>';                               
+                     endwhile;
+                     $html .= '</div>';
+                  endif;
+            wp_reset_query();  // Restore global post data stomped by the_post().
+
+  return $html;
+}
+
+add_shortcode( 'show-researchers', 'get_researchers' );
