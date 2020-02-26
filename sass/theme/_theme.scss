@@ -330,13 +330,13 @@ p {
 
 /*vertical progression box*/
 .progression-holder {
-  margin: 40px auto;
-  max-width: 500px;
+  margin: 40px auto; 
   background-color: #046b99;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.1);
- 
+  position: relative;
+  z-index: -1;
 }
 
 .progression-holder h3 {
@@ -367,20 +367,20 @@ p {
 
 .progression-holder .white {
   background-color: #fff; 
+  position: relative;
 }
 
 .progression-holder .white.arrow:after {
-  content: '';
-  width: 0; 
-  height: 0; 
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
-  border-top: 50px solid #fff;
+  content: ''; 
+  // border-left: 160px solid transparent;
+  // border-right: 160px solid transparent;
+  // border-top: 50px solid #fff;
+  background-color: #fff;
   position: absolute;
   bottom: -40px;
   display: block;
-  left: 20%;
-  z-index: 10;
+  left: 25%;
+  z-index: -1;
 }
 
 
@@ -388,25 +388,43 @@ p {
   color: #4C4E53;
 }
 
+.progression-holder p {
+	 z-index: 100;
+	 display: inline-block;
+}
+
 .progression-holder .white p {
-  color: #4C4E53;
+  color: #4C4E53; 
 }
 
 
-.arrow:after {
-  content: '';
-  width: 0; 
-  height: 0; 
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
-  border-top: 50px solid #046b99;
-  position: absolute;
-  bottom: -40px;
-  display: block;
-  left: 20%;
-  z-index: 10;
-}
+// .arrow:after {
+//   content: '';
+//   width: 0; 
+//   height: 0; 
+//   // border-left: 160px solid transparent;
+//   // border-right: 160px solid transparent;
+//   // border-top: 50px solid #046b99;
+//   position: absolute;
+//   bottom: -40px;
+//   display: block;
+//   left: 50%;
+//   z-index: 10;
+//   width: 80%; 
+//   height: 150px; 
+//    -ms-transform: rotate(45deg); /* IE 9 */
+//   transform: rotate(45deg); /* Standard syntax */
+//   z-index: 1;
+// }
 
+.vert-list-icon {
+	width: 33%;
+    background: #fff;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid $blue;
+}
 
 
 /*footer*/
