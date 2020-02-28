@@ -434,6 +434,26 @@ p {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
 }
 
+.researcher-group .card-body {
+	height: 340px;
+}
+
+
+.researcher-group img {
+	width: 100%;
+	height: auto;
+}
+
+
+.researcher-group .researcher-name {
+	margin: 12px 0 3px 0;
+}
+
+.researcher-group .researcher-title {
+	margin-bottom: 3px;
+	font-style: italic;
+}
+
 /*footer*/
 
 #wrapper-footer{

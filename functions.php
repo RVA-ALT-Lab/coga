@@ -58,10 +58,12 @@ function get_researchers(){
 	                      $html .= '<div class="col-md-4 researcher-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
 	                      $html .= '<div class="card researcher-group"><div class="card-body">';
-	                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
-	                      $html .= '<h3 class="researcher-title">';
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
+	                      $html .= '<h3 class="researcher-name">';
 	                      $html .=  get_the_title(); ;                      
 	                      $html .= '</h3></a>';
+	                      $html .= '<div class="researcher-title">'.get_field('researcher_title').'</div>';
+	                       $html .= '<div class="researcher-location">'.  get_field('researcher_site')[0]->name .'</div>';
 	                      $html .= '</div>';  
 	                      $html .= '</div>';                               
 	                      $html .= '</div>';                               	
