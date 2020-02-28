@@ -61,6 +61,33 @@
             "media_upload": 1,
             "default_value": "",
             "delay": 0
+        },
+        {
+            "key": "field_5e57bf1fd144b",
+            "label": "Site Connection",
+            "name": "site_connection",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "site"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
         }
     ],
     "location": [
@@ -93,5 +120,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1582728570
+    "modified": 1582808929
 }

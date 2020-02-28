@@ -54,16 +54,18 @@ function get_researchers(){
                     $the_query = new WP_Query( $args );
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row">';	
-                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
-                      $html .= '<div class="col-md-3 team-square">';                                              
-                      $html .= '<a href="'.get_the_permalink().'"><div class="card><div class="card-body">';
-                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid','researcher-bio-pic') );                      
-                      $html .= '<h3 class="researcher-title">';
-                      $html .=  get_the_title(); ;                      
-                      $html .= '</h3></a>';
-                      $html .= '</div>';  
-                      $html .= '</div>';                               
-                     endwhile;
+	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
+	                      $html .= '<div class="col-md-4 researcher-square">';                                              
+	                      $html .= '<a href="'.get_the_permalink().'">';
+	                      $html .= '<div class="card researcher-group"><div class="card-body">';
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
+	                      $html .= '<h3 class="researcher-title">';
+	                      $html .=  get_the_title(); ;                      
+	                      $html .= '</h3></a>';
+	                      $html .= '</div>';  
+	                      $html .= '</div>';                               
+	                      $html .= '</div>';                               	
+	                     endwhile;
                      $html .= '</div>';
                   endif;
             wp_reset_query();  // Restore global post data stomped by the_post().

@@ -1,0 +1,77 @@
+{
+    "key": "group_5e57bf6c45084",
+    "title": "Site",
+    "fields": [
+        {
+            "key": "field_5e57bf7941720",
+            "label": "Site Link",
+            "name": "site_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "center_lat": 53.5507112,
+            "center_lng": 10.0006485,
+            "zoom": 12,
+            "key": "field_5e57bfcc47e12",
+            "label": "Site Location",
+            "name": "site_location",
+            "type": "open_street_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "raw",
+            "layers": [
+                "OpenStreetMap"
+            ],
+            "allow_map_layers": 1,
+            "height": 400,
+            "max_markers": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "site"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1582812081
+}
