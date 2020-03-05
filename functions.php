@@ -43,25 +43,25 @@ function get_researcher_generic($field_name){
 
 function get_researchers($cat){
   global $post;
-  if (!$cat){  	
-  	$cat = '';
-  }
+ 
   $html = '';
             $args = array(
                       'posts_per_page' => -1,
                       'post_type'   => 'researcher', 
                       'post_status' => 'publish',
-                      'tax_query' => array(
-					        array (
+
+                    );
+             if ($cat){  	  	
+             	// array_merge($data, array("cat"=>"wagon","foo"=>"baar"));
+				  	$args['tax_query'] =  array_merge(
+					       array( array (
 					            'taxonomy' => 'location',
 					            'field' => 'slug',
 					            'terms' => $cat,
-					        )
-					    ),
-                    );
-        	
+					        ))
+					    );
+				  }
                     $the_query = new WP_Query( $args );
-                   // var_dump($the_query);
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row">';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
@@ -86,3 +86,20 @@ function get_researchers($cat){
 }
 
 add_shortcode( 'show-researchers', 'get_researchers' );
+
+
+
+
+//LOGGER -- like frogger but more useful
+
+if ( ! function_exists('write_log')) {
+   function write_log ( $log )  {
+      if ( is_array( $log ) || is_object( $log ) ) {
+         error_log( print_r( $log, true ) );
+      } else {
+         error_log( $log );
+      }
+   }
+}
+
+  //print("<pre>".print_r($a,true)."</pre>");
