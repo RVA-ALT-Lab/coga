@@ -62,13 +62,15 @@ function get_researchers($cat){
 					    );
 				  }
                     $the_query = new WP_Query( $args );
-                   
+
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row">';	
+                      	  $html .= '<div class="col-md-12"><h2>Researchers</h2></div>';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
 	                      $html .= '<div class="col-md-4 researcher-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
 	                      $html .= '<div class="card researcher-group"><div class="card-body">';
+	                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
 	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
 	                      $html .= '<h3 class="researcher-name">';
 	                      $html .=  get_the_title(); ;                      
@@ -88,6 +90,43 @@ function get_researchers($cat){
 
 add_shortcode( 'show-researchers', 'get_researchers' );
 
+function get_research_sites(){
+  global $post;
+ 
+  $html = '';
+            $args = array(
+                      'posts_per_page' => -1,
+                      'post_type'   => 'site', 
+                      'post_status' => 'publish',
+
+                    );
+             
+                    $the_query = new WP_Query( $args );
+
+                    if( $the_query->have_posts() ): 
+                      $html .= '<div class="row">';	
+                      	  //$html .= '<div class="col-md-12"><h2>Sites</h2></div>';	
+	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
+	                      $html .= '<div class="col-md-4 researcher-square">';                                              
+	                      $html .= '<a href="'.get_the_permalink().'">';
+	                      $html .= '<div class="card researcher-group"><div class="card-body">';
+	                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
+	                      $html .= '<h3 class="researcher-name">';
+	                      $html .=  get_the_title(); ;                      
+	                      $html .= '</h3></a>';	                     
+	                      $html .= '</div>';  
+	                      $html .= '</div>';                               
+	                      $html .= '</div>';                               	
+	                     endwhile;
+                     $html .= '</div>';
+                  endif;
+            wp_reset_query();  // Restore global post data stomped by the_post().
+
+  return $html;
+}
+
+add_shortcode( 'show-sites', 'get_research_sites' );
 
 
 

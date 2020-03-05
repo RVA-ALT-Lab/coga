@@ -38,7 +38,7 @@
             "field_type": "checkbox",
             "add_term": 1,
             "save_terms": 1,
-            "load_terms": 0,
+            "load_terms": 1,
             "return_format": "object",
             "multiple": 0,
             "allow_null": 0
@@ -94,5 +94,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1583421785
+    "modified": 1583422276
 }
