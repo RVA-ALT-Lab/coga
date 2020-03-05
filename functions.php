@@ -41,17 +41,27 @@ function get_researcher_generic($field_name){
 }
 
 
-function get_researchers(){
+function get_researchers($cat){
   global $post;
+  if (!$cat){  	
+  	$cat = '';
+  }
   $html = '';
             $args = array(
                       'posts_per_page' => -1,
                       'post_type'   => 'researcher', 
                       'post_status' => 'publish',
-                      // 'category_name' => $cat,
+                      'tax_query' => array(
+					        array (
+					            'taxonomy' => 'location',
+					            'field' => 'slug',
+					            'terms' => $cat,
+					        )
+					    ),
                     );
-        
+        	
                     $the_query = new WP_Query( $args );
+                   // var_dump($the_query);
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row">';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
@@ -63,7 +73,7 @@ function get_researchers(){
 	                      $html .=  get_the_title(); ;                      
 	                      $html .= '</h3></a>';
 	                      $html .= '<div class="researcher-title">'.get_field('researcher_title').'</div>';
-	                       $html .= '<div class="researcher-location">'.  get_field('researcher_site')[0]->name .'</div>';
+	                       // $html .= '<div class="researcher-location">'.  get_field('researcher_site')[0]->name .'</div>';
 	                      $html .= '</div>';  
 	                      $html .= '</div>';                               
 	                      $html .= '</div>';                               	

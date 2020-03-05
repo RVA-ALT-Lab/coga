@@ -12,26 +12,22 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-		<?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>	
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-
+fooooooooooo
 			<?php //understrap_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
 
+	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
+foo
 		<?php the_content(); ?>
-		<div class="site-researchers">
-			<?php 
-			$location = wp_get_post_terms($post->ID, 'location')[0]->slug;
-			echo get_researchers($location);?>
-		</div>
 
 		<?php
 		wp_link_pages(
