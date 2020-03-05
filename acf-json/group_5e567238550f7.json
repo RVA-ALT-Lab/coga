@@ -34,10 +34,10 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "site",
+            "taxonomy": "location",
             "field_type": "checkbox",
             "add_term": 1,
-            "save_terms": 0,
+            "save_terms": 1,
             "load_terms": 0,
             "return_format": "object",
             "multiple": 0,
@@ -88,10 +88,11 @@
         "author",
         "format",
         "page_attributes",
+        "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1582918881
+    "modified": 1583421785
 }
