@@ -71,7 +71,7 @@ function get_researchers($cat){
 	                      $html .= '<a href="'.get_the_permalink().'">';
 	                      $html .= '<div class="card researcher-group"><div class="card-body">';
 	                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
-	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid researcher-bio-pic', 'alt' => 'Researcher bio picture.') );                      
 	                      $html .= '<h3 class="researcher-name">';
 	                      $html .=  get_the_title(); ;                      
 	                      $html .= '</h3></a>';
@@ -110,7 +110,7 @@ function get_research_sites(){
 	                      $html .= '<a href="'.get_the_permalink().'">';
 	                      $html .= '<div class="card site-group"><div class="card-body">';
 	                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
-	                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid','site-pic', 'alt' => 'Site logo.') );                      
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid site-pic', 'alt' => 'Site logo.') );                      
 	                      $html .= '<h3 class="site-name">';
 	                      $html .=  get_the_title(); ;                      
 	                      $html .= '</h3></a>';	                     
