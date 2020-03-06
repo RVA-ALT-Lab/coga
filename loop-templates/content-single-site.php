@@ -12,8 +12,8 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-		<?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>	
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php echo get_the_post_thumbnail( $post->ID, 'medium',array( 'class' => 'img-fluid site-logo', 'alt' => 'University logo.' ) ); ?>	
+		<?php the_title( '<h1 class="entry-title site-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
 
