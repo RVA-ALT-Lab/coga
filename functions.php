@@ -65,7 +65,7 @@ function get_researchers($cat){
 
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row">';	
-                      	  $html .= '<div class="col-md-12"><h2>Researchers</h2></div>';	
+                      	  // $html .= '<div class="col-md-12"><h2>Researchers</h2></div>';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
 	                      $html .= '<div class="col-md-4 researcher-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
@@ -105,14 +105,13 @@ function get_research_sites(){
 
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row">';	
-                      	  //$html .= '<div class="col-md-12"><h2>Sites</h2></div>';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
-	                      $html .= '<div class="col-md-4 researcher-square">';                                              
+	                      $html .= '<div class="col-md-4 site-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
-	                      $html .= '<div class="card researcher-group"><div class="card-body">';
+	                      $html .= '<div class="card site-group"><div class="card-body">';
 	                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
-	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid','researcher-bio-pic', 'alt' => 'Researcher biography picture.') );                      
-	                      $html .= '<h3 class="researcher-name">';
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid','site-pic', 'alt' => 'Site logo.') );                      
+	                      $html .= '<h3 class="site-name">';
 	                      $html .=  get_the_title(); ;                      
 	                      $html .= '</h3></a>';	                     
 	                      $html .= '</div>';  

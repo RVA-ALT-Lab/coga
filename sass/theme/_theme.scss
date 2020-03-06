@@ -48,7 +48,9 @@ p {
 }
 
 /*main content elements*/
-
+#content {
+	margin-top: 50px;
+}
 
 .entry-content .nav-button h2 {
 	border-bottom: none;
@@ -449,24 +451,25 @@ p {
 
 //RESEARCHER GROUP DISPLAY
 
-.researcher-group {
+.researcher-group, .site-group {
     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
 }
 
-.researcher-group .card-body {
+.researcher-group .card-body, .site-group .card-body {
 	height: 340px;
 }
 
 
-.researcher-group img {
+.researcher-group img, .site-group img {
 	width: 100%;
 	height: auto;
 }
 
 
-.researcher-group .researcher-name {
+.researcher-group .researcher-name, .site-group .site-name {
 	margin: 12px 0 3px 0;
+	font-size: 1.5em;
 }
 
 .researcher-group .researcher-title {

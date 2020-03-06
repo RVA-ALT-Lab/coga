@@ -201,7 +201,7 @@ function create_site_cpt() {
     'show_in_rest' => true,
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_icon' => 'dashicons-admin-site-alt2',
   );
   register_post_type( 'site', $args );
   
