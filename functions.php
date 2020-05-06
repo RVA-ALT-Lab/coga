@@ -65,7 +65,7 @@ function get_researchers($cat){
 
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row researchers">';	
-                      	  // $html .= '<div class="col-md-12"><h2>Researchers</h2></div>';	
+                      	  $html .= '<div class="col-md-12"><h2 class="row-header">Researchers</h2></div>';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
 	                      $html .= '<div class="col-md-4 researcher-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
@@ -104,7 +104,8 @@ function get_research_sites(){
                     $the_query = new WP_Query( $args );
 
                     if( $the_query->have_posts() ): 
-                      $html .= '<div class="row sites">';	
+                      $html .= '<div class="row sites">';
+                          $html .= '<div class="col-md-12"><h2 class="row-header">Sites</h2></div>';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
 	                      $html .= '<div class="col-md-4 site-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
