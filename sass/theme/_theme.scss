@@ -47,6 +47,10 @@ p {
 	border-bottom: 2px solid $orange;
 }
 
+.growth-spurt {
+  margin-top: 20px;
+}
+
 /*main content elements*/
 #content {
 	margin-top: 50px;
@@ -627,7 +631,7 @@ h3.news-title {
 }
 
 #parental-monitoring .fa {
-  font-size: 3em;
+  font-size: 2em;
   display:inline-block;
   margin: 10px;
 }
