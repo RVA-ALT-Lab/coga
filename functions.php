@@ -67,15 +67,17 @@ function get_researchers($cat){
                       $html .= '<div class="row researchers">';	
                       	  $html .= '<div class="col-md-12"><h2 class="row-header">Researchers</h2></div>';	
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
+	                      $name = get_the_title();
 	                      $html .= '<div class="col-md-4 researcher-square">';                                              
 	                      $html .= '<a href="'.get_the_permalink().'">';
 	                      $html .= '<div class="card researcher-group"><div class="card-body">';
+	                      $alt = get_the_title() . ' researcher biography picture.';
 	                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
-	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid researcher-bio-pic', 'alt' => 'Researcher bio picture.') );                      
+	                      $html .=  get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'img-fluid researcher-bio-pic', 'alt' => $alt) );                      
 	                      $html .= '<h3 class="researcher-name">';
-	                      $html .=  get_the_title(); ;                      
+	                      $html .= $name;                      
 	                      $html .= '</h3></a>';
-	                      $html .= '<div class="researcher-title">'.get_field('researcher_title').'</div>';
+	                      //$html .= '<div class="researcher-title">'.get_field('researcher_title').'</div>';
 	                      $html .= '<div class="researcher-location">'.  get_field('researcher_site')[0]->name .'</div>';
 	                      $html .= '</div>';  
 	                      $html .= '</div>';                               

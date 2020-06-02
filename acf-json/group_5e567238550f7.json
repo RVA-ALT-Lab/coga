@@ -61,6 +61,22 @@
             "media_upload": 1,
             "default_value": "",
             "delay": 0
+        },
+        {
+            "key": "field_5ed6888cab304",
+            "label": "Link",
+            "name": "link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -94,5 +110,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1583422276
+    "modified": 1591117978
 }
