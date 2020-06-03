@@ -492,7 +492,7 @@ img.site-logo {
 }
 
 
-//RESEARCHER GROUP DISPLAY
+//RESEARCHER and site GROUP DISPLAY
 
 .researcher-group, .site-group {
     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.29);
@@ -507,6 +507,9 @@ img.site-logo {
 	height: 440px;
 }
 
+.site-square {
+  margin-bottom: 30px;
+}
 
 .researcher-group img, .site-group img {
 	width: 100%;
