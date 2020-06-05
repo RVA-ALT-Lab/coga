@@ -85,6 +85,26 @@ function home_nav_menu (){
     
   }
 
+  function main_info_panels(){
+     if( have_rows('home_info_panels') ):
+
+  // loop through the rows of data
+    while ( have_rows('home_info_panels') ) : the_row();
+        $slug_title = sanitize_title(get_sub_field('info_title'));
+        echo '<div class="col-md-10 offset-md-1"><div class="list-box">';
+        echo '<h2 id="' . $slug_title . '">' . get_sub_field('info_title') . '</h2>';
+        echo get_sub_field('info_text');
+        echo '</div></div>';
+    endwhile;
+
+    else :
+
+        // no rows found
+
+    endif;
+    
+  }
+
 function home_news(){
     $cat_id = get_field('home_news');
     $args = array(
