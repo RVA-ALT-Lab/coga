@@ -49,7 +49,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="row">
 			<div class="col-md-4 entry-content">
 				<h2>News</h2>
-				<p>Look to us to see what’s going on in the realm of genetics and alcoholism.</p>
+				<p>Learn more about new findings surrounding genetics and alcohol.</p>
 			</div>
 			<div class="col-md-8">
 				<div class="display-news-posts">
