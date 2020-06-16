@@ -245,6 +245,34 @@ p {
 }
 
 
+.orange-header {
+  border-bottom: 2px solid $orange;
+  margin-bottom: 15px;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.biggest-text {
+    font-size: 4em;
+    color: $orange;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    line-height: .9;
+}
+
+.big-text {
+    font-size: 2em;
+    color: $orange;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    line-height: .5;
+}
+
 /*site specific*/
 
 .sites {
