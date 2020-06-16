@@ -148,7 +148,7 @@ function fact_builder($cat_id){
         $the_icon = get_field('fact_icon');
         $the_url = get_field('fact_url');
         if ($the_url != ''){
-           $fact_title = '<a href="' . get_the_permalink() . '"><h3>'.get_the_title() . '</h3></a>';
+           $fact_title = '<a href="' . $the_url . '"><h3>'.get_the_title() . '</h3></a>';
         } else {
           $fact_title = '<h3>'.get_the_title() . '</h3>';
         }
