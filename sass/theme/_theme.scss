@@ -20,10 +20,10 @@ h1, h2, h3, h4, h5, .navbar-brand {
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.4em;
+	font-family: Avenir,sans-serif;
+	font-size: 1.2em;
 	color: #424242;
-	line-height: 1.3em;
+	line-height: 1.5em;
 }
 
 /*navbar stuff*/
@@ -85,7 +85,9 @@ p {
 }
 
 .entry-content .nav-button h2:hover {
-	background-color: $gray;	
+  background-color: $gray;
+  -webkit-box-shadow: 3px 3px 10px 0 rgba(0,0,0,.25);
+	box-shadow: 3px 3px 10px 0 rgba(0,0,0,.25);
 }
 
 .entry-content .nav-button a:hover {
@@ -108,6 +110,8 @@ p {
 .entry-content .nav-button h3:hover {
   background-color: $gray;
   color: #fff;
+  -webkit-box-shadow: 3px 3px 10px 0 rgba(0,0,0,.25);
+	box-shadow: 3px 3px 10px 0 rgba(0,0,0,.25);
 }
 
 .wp-caption-text {
@@ -115,6 +119,13 @@ p {
     background: #efefef;
     padding: 10px;
     margin: 10px 0;
+}
+
+.call-out {
+	background-color:#B3EFFF;
+	padding: 20px;
+	margin: 10px 0 20px 0;
+	border-radius: 10px;
 }
 
 .list-box {
