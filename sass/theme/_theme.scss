@@ -98,7 +98,6 @@ p {
 	border-bottom: none;
 	background-color: $orange-gold;
 	color: $gray;
-	padding: 10% 20px;
 	height: auto;
 	display: block;
 	margin-bottom: 10px;
@@ -107,12 +106,25 @@ p {
   border-radius: 10px;
 }
 
-.entry-content .nav-button h3:hover {
+.entry-content .nav-button h3 a {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10% 20px;
+  border-radius: 10px;
+}
+
+.entry-content .nav-button h3:hover{
   background-color: $gray;
   color: #fff;
   -webkit-box-shadow: 3px 3px 10px 0 rgba(0,0,0,.25);
 	box-shadow: 3px 3px 10px 0 rgba(0,0,0,.25);
 }
+
+.entry-content .nav-button h3:hover a {
+  background-color: $gray;
+  color: #fff;
+  }
 
 .wp-caption-text {
     font-size: .9em;
