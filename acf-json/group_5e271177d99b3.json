@@ -188,6 +188,13 @@
                 "operator": "==",
                 "value": "page-templates\/fullwidthpage-home.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "page-templates\/fullwidthpage-main.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -198,5 +205,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579633174
+    "modified": 1593436266
 }
