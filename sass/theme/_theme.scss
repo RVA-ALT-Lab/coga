@@ -387,7 +387,13 @@ img.fluid {
 	background-color: $light-blue;
 }
 
-.understrap-read-more-link.button-secondary {
+//NEWS
+
+.news {
+  margin: 20px auto;
+}
+
+.news .understrap-read-more-link {
   display: block;
   background-color: $blue;
   font-size: 1.1em;

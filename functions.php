@@ -142,32 +142,38 @@ add_shortcode( 'show-sites', 'get_research_sites' );
 function coga_get_blog_posts(){
 	global $post;
 		$html = '';
+		 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $args = array(
                       'posts_per_page' => -1,
                       'post_type'   => 'post', 
                       'post_status' => 'publish',
                       'order' => 'ASC',
                       'orderby' => 'date',
+                      'posts_per_page' => 2,
+        			  'paged' => $paged
                     );
              
                     $the_query = new WP_Query( $args );
 
                     if( $the_query->have_posts() ): 
-                      $html .= '<div class="row sites">';
+                      $html .= '<div class="row news">';
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
-		                      $html .= '<div class="col-md-10 site-square">';                                              
+		                      $html .= '<div class="col-md-10">';                                              
 		                      $html .= '<a href="'.get_the_permalink().'">';
 		                      $html .= '<div class="card news"><div class="card-body">';
 		                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
 		                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid site-pic alignleft', 'alt' => 'Decorative image.') );                      
-		                      $html .= '<h3 class="news-name">';
+		                      $html .= '<h2 class="news-name">';
 		                      $html .=  get_the_title(); ;                      
-		                      $html .= '</h3></a>';	
+		                      $html .= '</h2></a>';	
 		                      $html .= '<p>' . get_the_excerpt() . '</p>';                      
 		                      $html .= '</div>';  
 		                      $html .= '</div>';                               
 		                      $html .= '</div>';                               	
 	                     endwhile;
+	                    if (function_exists("pagination")) {
+          					pagination($custom_query->max_num_pages);
+      					}
                      $html .= '</div>';
                   endif;
             wp_reset_query();  // Restore global post data stomped by the_post().
