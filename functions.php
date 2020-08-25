@@ -164,7 +164,7 @@ function coga_get_blog_posts(){
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row news">';
 	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
-		                      $html .= '<div class="col-md-10">';                                              
+		                      $html .= '<div class="col-md-12">';                                              
 		                      $html .= '<a href="'.get_the_permalink().'">';
 		                      $html .= '<div class="card news"><div class="card-body">';
 		                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
