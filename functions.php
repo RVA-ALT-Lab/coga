@@ -142,18 +142,24 @@ add_shortcode( 'show-sites', 'get_research_sites' );
 function coga_get_blog_posts(){
 	global $post;
 		$html = '';
-		 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $args = array(
-                      'posts_per_page' => -1,
                       'post_type'   => 'post', 
                       'post_status' => 'publish',
                       'order' => 'ASC',
                       'orderby' => 'date',
-                      'posts_per_page' => 2,
+                      'posts_per_page' => 10,
         			  'paged' => $paged
                     );
              
                     $the_query = new WP_Query( $args );
+                    global $wp_query;
+					// Put default query object in a temp variable
+					$tmp_query = $wp_query;
+					// Now wipe it out completely
+					$wp_query = null;
+					// Re-populate the global with our custom query
+					$wp_query = $the_query;
 
                     if( $the_query->have_posts() ): 
                       $html .= '<div class="row news">';
@@ -170,11 +176,11 @@ function coga_get_blog_posts(){
 		                      $html .= '</div>';  
 		                      $html .= '</div>';                               
 		                      $html .= '</div>';                               	
-	                     endwhile;
-	                    if (function_exists("pagination")) {
-          					pagination($custom_query->max_num_pages);
-      					}
+	                     endwhile;	                    
                      $html .= '</div>';
+                     $html .= get_previous_posts_link('&laquo; Newer posts'); 
+	                 $html .= get_next_posts_link('Older posts &raquo;');
+	                   
                   endif;
             wp_reset_query();  // Restore global post data stomped by the_post().
 
