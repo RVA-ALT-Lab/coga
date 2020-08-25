@@ -139,6 +139,43 @@ function get_research_sites(){
 add_shortcode( 'show-sites', 'get_research_sites' );
 
 
+function coga_get_blog_posts(){
+	global $post;
+		$html = '';
+            $args = array(
+                      'posts_per_page' => -1,
+                      'post_type'   => 'post', 
+                      'post_status' => 'publish',
+                      'order' => 'ASC',
+                      'orderby' => 'date',
+                    );
+             
+                    $the_query = new WP_Query( $args );
+
+                    if( $the_query->have_posts() ): 
+                      $html .= '<div class="row sites">';
+	                      while ( $the_query->have_posts() ) : $the_query->the_post(); 
+		                      $html .= '<div class="col-md-10 site-square">';                                              
+		                      $html .= '<a href="'.get_the_permalink().'">';
+		                      $html .= '<div class="card news"><div class="card-body">';
+		                      //NEED TO PUT AN ELSE IN HERE FOR MISSING THUMBS
+		                      $html .=  get_the_post_thumbnail( $post->ID, 'medium', array( 'class' => 'img-fluid site-pic alignleft', 'alt' => 'Decorative image.') );                      
+		                      $html .= '<h3 class="news-name">';
+		                      $html .=  get_the_title(); ;                      
+		                      $html .= '</h3></a>';	
+		                      $html .= '<p>' . get_the_excerpt() . '</p>';                      
+		                      $html .= '</div>';  
+		                      $html .= '</div>';                               
+		                      $html .= '</div>';                               	
+	                     endwhile;
+                     $html .= '</div>';
+                  endif;
+            wp_reset_query();  // Restore global post data stomped by the_post().
+
+  return $html;
+
+}
+
 
 //LOGGER -- like frogger but more useful
 

@@ -387,6 +387,15 @@ img.fluid {
 	background-color: $light-blue;
 }
 
+.understrap-read-more-link.button-secondary {
+  display: block;
+  background-color: $blue;
+  font-size: 1.1em;
+  text-align: center;
+  width: 200px;
+  margin: 20px auto;
+}
+
 /*emoji circles*/
 .big-emoji{
     width: 160px;
