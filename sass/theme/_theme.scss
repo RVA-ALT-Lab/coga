@@ -721,6 +721,10 @@ h3.news-title {
   color: #424242;
 }
 
+.monitor h2 {
+  border-bottom: none;
+}
+
 .data-holder {
 /*   width: 0%; */
   height: 300px;
@@ -731,10 +735,12 @@ h3.news-title {
   transition: all .3s;
 }
 
-#data-holder.show {
+.data-holder.show {
   padding: 15px;
   width: 100%;
 }
+
+
 
 .bar {
   height: 80px;
