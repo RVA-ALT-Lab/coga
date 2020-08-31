@@ -751,7 +751,8 @@ h3.news-title {
   border-top: 4px solid $blue;
   border-left: 4px solid $blue;
   border-right: 4px solid $blue;
-  border-radius-: 25px;  
+  border-top-right-radius: 25px;  
+  border-top-left-radius: 25px;  
   width: 300px;
   margin: 0 auto -5px auto;
   color: #fff;
