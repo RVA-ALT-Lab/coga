@@ -741,10 +741,10 @@ h3.news-title {
 }
 
 .data-header {
-    text-align: center;
     margin-top: 70px;
     margin-bottom: 30px;
-    border-bottom: 7px solid $blue;
+    // border-bottom: 7px solid $blue;
+    overflow: hidden;
 }
 
 .data-header h3 {
@@ -754,10 +754,23 @@ h3.news-title {
   border-top-right-radius: 25px;  
   border-top-left-radius: 25px;  
   width: 300px;
-  margin: 0 auto -5px auto;
+  margin: 0 auto;
   color: #fff;
   background-color: $blue;
   padding: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.data-header h3:after{
+  content:'';
+  width:100vw;
+  height: 5px;
+  border-bottom: 3px solid $blue;
+  display: block;
+  position: absolute;
+  left: -50vw;
+  bottom: 0;
 }
 
 
