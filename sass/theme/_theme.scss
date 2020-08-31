@@ -740,6 +740,24 @@ h3.news-title {
   width: 100%;
 }
 
+.data-header {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-bottom: 7px solid $blue;
+}
+
+.data-header h3 {
+  border-top: 4px solid $blue;
+  border-left: 4px solid $blue;
+  border-right: 4px solid $blue;
+  border-radius-: 25px;  
+  width: 300px;
+  margin: 0 auto -5px auto;
+  color: #fff;
+  background-color: $blue;
+  padding: 8px;
+}
 
 
 .bar {
