@@ -1,5 +1,6 @@
 window.onload = function() {
   aud_monitoring();
+  aud_peers();
 }
 function aud_monitoring(){
   if(document.getElementById('high-monitor')){
@@ -14,7 +15,7 @@ function aud_monitoring(){
       let genes = document.getElementById('genes');
       let env = document.getElementById('env');
       let details = document.getElementById('data-details');
-      let holder = document.getElementById('data-holder');
+      let holder = document.getElementById('parent-data-holder');
       genes.style.width = '20%';
       genes.style.opacity = '100%';
       env.style.width = '60%';
@@ -55,9 +56,9 @@ function aud_peers(){
 
 
     function showHighData(){
-      let genes = document.getElementById('genes');
-      let env = document.getElementById('env');
-      let details = document.getElementById('data-details');
+      let genes = document.getElementById('peer-genes');
+      let env = document.getElementById('peer-env');
+      let details = document.getElementById('peer-data-details');
       let holder = document.getElementById('data-holder');
       genes.style.width = '20%';
       genes.style.opacity = '100%';
