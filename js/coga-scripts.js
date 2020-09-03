@@ -1,6 +1,8 @@
 window.onload = function() {
   aud_monitoring();
   aud_peers();
+  aud_marriage();
+  aud_neighborhood();
 }
 function aud_monitoring(){
   if(document.getElementById('high-monitor')){
@@ -82,6 +84,95 @@ function aud_peers(){
       env.style.width = '80%';
       env.style.opacity = '100%';
       details.innerHTML = "<p>When alcohol use among friends is low, the environment is far more important in influencing risk.</p>";
+       highM.classList.remove('active');
+       highM.classList.add('inactive');
+       lowM.classList.add('active');
+       lowM.classList.remove('inactive');
+    }
+  }
+}
+
+
+function aud_marriage(){
+  if(document.getElementById('js-marriage')){
+    const highM = document.getElementById('high-marriage');
+    const lowM = document.getElementById('low-marriage');
+
+    highM.addEventListener("click", showHighData);
+    lowM.addEventListener("click", showLowData);
+
+
+    function showHighData(){
+      let genes = document.getElementById('marriage-genes');
+      let env = document.getElementById('marriage-env');
+      let details = document.getElementById('marriage-data-details');
+      let holder = document.getElementById('marriage-data-holder');
+      genes.style.width = '77%';
+      genes.style.opacity = '100%';
+      env.style.width = '23%';
+      env.style.opacity = '100%';
+
+      details.innerHTML = "<p>Marriage appears to be a protective factor for many adults, reducing the impact of a genetic predisposition toward heavy alcohol consumption.</p>";
+      lowM.classList.remove('active');
+      lowM.classList.add('inactive');
+      highM.classList.add('active');
+      highM.classList.remove('inactive');
+      holder.classList.add('show');
+    }
+
+    function showLowData(){
+      let genes = document.getElementById('marriage-genes');
+      let env = document.getElementById('marriage-env');
+      let details = document.getElementById('marriage-data-details')
+      genes.style.width = '59%';
+      genes.style.opacity = '100%';
+      env.style.width = '41%';
+      env.style.opacity = '100%';
+      details.innerHTML = "<p>Among unmarried individuals, where there may be less social monitoring and support, genetic predispositions become more important in influencing how much people drink.</p>";
+       highM.classList.remove('active');
+       highM.classList.add('inactive');
+       lowM.classList.add('active');
+       lowM.classList.remove('inactive');
+    }
+  }
+}
+
+function aud_neighborhood(){
+  if(document.getElementById('js-neighborhood')){
+    const highM = document.getElementById('high-neighborhood');
+    const lowM = document.getElementById('low-neighborhood');
+
+    highM.addEventListener("click", showHighData);
+    lowM.addEventListener("click", showLowData);
+
+
+    function showHighData(){
+      let genes = document.getElementById('neighborhood-genes');
+      let env = document.getElementById('neighborhood-env');
+      let details = document.getElementById('neighborhood-data-details');
+      let holder = document.getElementById('neighborhood-data-holder');
+      genes.style.width = '64%';
+      genes.style.opacity = '100%';
+      env.style.width = '36%';
+      env.style.opacity = '100%';
+
+      details.innerHTML = "<p>Genetic influences play a bigger role in alcohol use in young adults when there is more neighborhood instability, presumably reflecting less community monitoring.</p>";
+      lowM.classList.remove('active');
+      lowM.classList.add('inactive');
+      highM.classList.add('active');
+      highM.classList.remove('inactive');
+      holder.classList.add('show');
+    }
+
+    function showLowData(){
+      let genes = document.getElementById('neighborhood-genes');
+      let env = document.getElementById('neighborhood-env');
+      let details = document.getElementById('neighborhood-data-details')
+      genes.style.width = '17%';
+      genes.style.opacity = '100%';
+      env.style.width = '83%';
+      env.style.opacity = '100%';
+      details.innerHTML = "<p>Environmental influences become more important in neighborhoods with more stability.</p>";
        highM.classList.remove('active');
        highM.classList.add('inactive');
        lowM.classList.add('active');
