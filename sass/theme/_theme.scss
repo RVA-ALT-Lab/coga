@@ -687,7 +687,7 @@ h3.news-title {
 	padding-bottom: 50px;
 }
 
-/*PARENTAL MONITORING*/
+/*PARENTAL MONITORING and other env data viz*/
 
 .monitor {
   height: 140px;
@@ -859,6 +859,15 @@ h3.news-title {
   background-color: #efefef;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.dig-deeper {
+  margin: 30px;
+  padding-left: 140px;
+  background-image: url(../imgs/shovel.svg);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 // Extra small devices (portrait phones, less than 576px)
