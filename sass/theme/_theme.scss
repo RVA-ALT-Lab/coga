@@ -701,10 +701,23 @@ h3.news-title {
   transition: all .3s;
 }
 
-.monitor:hover {
+.monitor:hover, .inactive.monitor:hover{
   cursor: pointer;
-  color: #424242;
+  color: #fff;
+  background-color: $blue;
 }
+
+ .monitor:hover h2 {
+  color: #fff;
+ }
+
+ .active.monitor:hover h2 {
+  color: $gray;
+ }
+
+ .inactive.monitor:hover h2 {
+  color: #fff;
+ }
 
 .monitor.active{
   background-color: #B3EFFF;
@@ -828,10 +841,17 @@ h3.news-title {
 .big-q {
   font-size: 3em;
    font-family: 'Varela Round', sans-serif;
-   margin: 10% 20px;
-  display: inline-block;
+   margin: 10% auto;
+   display: block;
+   text-align: center;
 }
 
+
+#parenting .row, #js-peers .row, #js-marriage .row, #js-neighborhood .row  {
+  background-color: #efefef;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
