@@ -14,10 +14,10 @@ h1, h2, h3, h4, h5, .navbar-brand {
 }
 
 .entry-content ul li {
-      font-family: Avenir,sans-serif;
-    font-size: 1.2em;
-    color: #424242;
-    line-height: 1.5em;
+  font-family: Avenir,sans-serif;
+  font-size: 1.2em;
+  color: #424242;
+  line-height: 1.5em;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -615,11 +615,11 @@ img.fluid {
 }
 
 .researcher-group .card-body {
-	height: 450px;
+	height: 500px;
 }
 
 .site-group .card-body {
-	height: 440px;
+	height: 470px;
 }
 
 .site-square {
@@ -632,7 +632,7 @@ img.fluid {
 }
 
 
-.researcher-group .researcher-name, .site-group .site-name {
+.researcher-group .researcher-name, .site-group .site-name{
 	margin: 12px 0 3px 0;
 	font-size: 1.5em;
 }
@@ -640,6 +640,11 @@ img.fluid {
 .researcher-group .researcher-title {
 	margin-bottom: 3px;
 	font-style: italic;
+}
+
+.researcher-group .researcher-bio p{
+  margin-top: 15px;
+  font-size: 1em;
 }
 
 /*footer*/
