@@ -85,7 +85,8 @@ function get_researchers($cat){
 		                      	$html .= '</a>';
 		                      }
 		                      //$html .= '<div class="researcher-title">'.get_field('researcher_title').'</div>';
-		                      $html .= '<div class="researcher-location">'.  get_field('researcher_site')[0]->name .'</div>';
+		                      $html .= '<div class="researcher-location">' .  get_field('researcher_site')[0]->name .'</div>';
+		                      $html .= '<div class="researcher-title">' . get_field('researcher_title') . '</div>';
 		                      $html .= '<div class="researcher-bio">' . get_field('researcher_bio') . '</div>';
 		                      $html .= '</div>';  
 		                      $html .= '</div>';                               
