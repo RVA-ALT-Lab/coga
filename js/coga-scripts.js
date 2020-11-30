@@ -23,7 +23,7 @@ function aud_monitoring(){
       env.style.width = '60%';
       env.style.opacity = '100%';
 
-      details.innerHTML = "<p>When parents pay close attention to their children’s whereabouts and activities, the environment is the most important factor influencing whether or not they are smoking or drinking.</p>";
+      details.innerHTML = "<p>When parents pay close attention to their children’s whereabouts and activities, environment becomes a bigger factor in whether or not they are smoking or drinking.</p>";
       lowM.classList.remove('active');
       lowM.classList.add('inactive');
       highM.classList.add('active');
