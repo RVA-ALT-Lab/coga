@@ -107,9 +107,9 @@ function aud_marriage(){
       let env = document.getElementById('marriage-env');
       let details = document.getElementById('marriage-data-details');
       let holder = document.getElementById('marriage-data-holder');
-      genes.style.width = '77%';
+      genes.style.width = '59%';
       genes.style.opacity = '100%';
-      env.style.width = '23%';
+      env.style.width = '41%';
       env.style.opacity = '100%';
 
       details.innerHTML = "<p>Marriage appears to be a protective factor for many adults, reducing the impact of a genetic predisposition toward heavy alcohol consumption.</p>";
@@ -124,9 +124,9 @@ function aud_marriage(){
       let genes = document.getElementById('marriage-genes');
       let env = document.getElementById('marriage-env');
       let details = document.getElementById('marriage-data-details')
-      genes.style.width = '59%';
+      genes.style.width = '77%';
       genes.style.opacity = '100%';
-      env.style.width = '41%';
+      env.style.width = '23%';
       env.style.opacity = '100%';
       details.innerHTML = "<p>Among unmarried individuals, where there may be less social monitoring and support, genetic predispositions become more important in influencing how much people drink.</p>";
        highM.classList.remove('active');
