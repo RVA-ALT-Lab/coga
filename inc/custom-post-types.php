@@ -251,3 +251,65 @@ function coga_location_taxonomy() {
 
 }
 add_action( 'init', 'coga_location_taxonomy', 0 );
+
+
+function create_story_cpt() {
+
+  $labels = array(
+    'name' => __( 'Stories', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'Story', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'Story', 'textdomain' ),
+    'name_admin_bar' => __( 'Story', 'textdomain' ),
+    'archives' => __( 'Story Archives', 'textdomain' ),
+    'attributes' => __( 'Story Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'Story:', 'textdomain' ),
+    'all_items' => __( 'All Stories', 'textdomain' ),
+    'add_new_item' => __( 'Add New Story', 'textdomain' ),
+    'add_new' => __( 'Add New', 'textdomain' ),
+    'new_item' => __( 'New Story', 'textdomain' ),
+    'edit_item' => __( 'Edit Story', 'textdomain' ),
+    'update_item' => __( 'Update Story', 'textdomain' ),
+    'view_item' => __( 'View Story', 'textdomain' ),
+    'view_items' => __( 'View Stories', 'textdomain' ),
+    'search_items' => __( 'Search Stories', 'textdomain' ),
+    'not_found' => __( 'Not found', 'textdomain' ),
+    'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+    'featured_image' => __( 'Featured Image', 'textdomain' ),
+    'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+    'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+    'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into Story', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this Story', 'textdomain' ),
+    'items_list' => __( 'Story list', 'textdomain' ),
+    'items_list_navigation' => __( 'Story list navigation', 'textdomain' ),
+    'filter_items_list' => __( 'Filter Story list', 'textdomain' ),
+  );
+  $args = array(
+    'label' => __( 'story', 'textdomain' ),
+    'description' => __( '', 'textdomain' ),
+    'labels' => $labels,
+    'menu_icon' => '',
+    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
+    'taxonomies' => array('category','tag'),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'can_export' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'exclude_from_search' => false,
+    'show_in_rest' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'menu_icon' => 'dashicons-book',
+  );
+  register_post_type( 'story', $args );
+  
+  // flush rewrite rules because we changed the permalink structure
+  global $wp_rewrite;
+  $wp_rewrite->flush_rules();
+}
+add_action( 'init', 'create_story_cpt', 0 );
