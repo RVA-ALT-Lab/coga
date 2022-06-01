@@ -1123,7 +1123,29 @@ h3.news-title {
 }
 
 /* For narrow viewports, the sidenote is hidden by default and shown when the checkbox is checked. */
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 991px) {
+
+  #aud-page-menu {
+    display: none;
+  }
+
+  #aud-page-menu--flex ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: -40px;
+    flex-wrap: wrap;
+  }
+
+  #aud-page-menu--flex li {
+    padding-right: 1em;
+  }
+
+  #aud-page-menu--flex ul li::before {
+    content: url(../imgs/coga_charm.svg);
+    width: 1.2em;
+    height: .8em;
+    display: inline-flex;
+  }
 
   .sidenotes-container p.side-by-side {
     display: flex;
@@ -1169,14 +1191,35 @@ h3.news-title {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
+  
+  #aud-page-menu ul {
+    list-style-type: none;
+  }
+
+  #aud-page-menu ul li {
+    font-family: Roboto,sans-serif;;
+    font-size: 1rem;
+  }
+
+  #aud-page-menu ul li::before {
+    content: url(../imgs/coga_charm.svg);
+    width: 1.2em;
+    height: .8em;
+    display: inline-flex;
+  }
+  
+  #aud-page-menu--flex {
+    display: none;
+  }
+  
   .sidenotes-container {
-    margin: 0 auto 0 4em;
+    margin: 0 auto 0 2em;
   }
   
   .sidenote {
-    --sidenote-width: 12rem;
-    --sidenote-margin: 4.8rem;
+    --sidenote-width: 11rem;
+    --sidenote-margin: 3.5rem;
     cursor: default;
     line-height: 1em;
   }
