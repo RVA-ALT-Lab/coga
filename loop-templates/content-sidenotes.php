@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 			<li><a href="https://rampages.us/coga/aud/gene-identification/" aria-label="Gene Identification">Gene Identification</a></li>
 			<li><a href="https://rampages.us/coga/aud/response-to-alcohol/" aria-label="Response to Alcohol">Response to Alcohol</a></li>
 			<li><a href="https://rampages.us/coga/aud/externalizing-alcohol-use-disorders/" aria-label="Externalizing Alcohol Use Disorders">Externalizing Alcohol Use Disorders</a></li>
-			<li><a href="https://rampages.us/coga/aud/internalizing-symptoms/" aria-label="Internalizing Alcohol Use Disorders">Internalizing Alcohol Use Disorders</a></li>
+			<li><a href="https://rampages.us/coga/aud/internalizing-alcohol-use-disorders/" aria-label="Internalizing Alcohol Use Disorders">Internalizing Alcohol Use Disorders</a></li>
 			<li><a href="https://rampages.us/coga/aud/brain-function/" aria-label="Brain Function">Brain Function</a></li>
 			<li><a href="https://rampages.us/coga/aud/polygenic-risk-scores/" aria-label="Polygenic Risk Scores">Polygenic Risk Scores</a></li>
 		</ul>
@@ -55,7 +55,7 @@ defined( 'ABSPATH' ) || exit;
 				<li><a href="https://rampages.us/coga/aud/gene-identification/" aria-label="Gene Identification">Gene Identification</a></li>
 				<li><a href="https://rampages.us/coga/aud/response-to-alcohol/" aria-label="Response to Alcohol">Response to Alcohol</a></li>
 				<li><a href="https://rampages.us/coga/aud/externalizing-alcohol-use-disorders/" aria-label="Externalizing Alcohol Use Disorders">Externalizing Alcohol Use Disorders</a></li>
-				<li><a href="https://rampages.us/coga/aud/internalizing-symptoms/" aria-label="Internalizing Alcohol Use Disorders">Internalizing Alcohol Use Disorders</a></li>
+				<li><a href="https://rampages.us/coga/aud/internalizing-alcohol-use-disorders/" aria-label="Internalizing Alcohol Use Disorders">Internalizing Alcohol Use Disorders</a></li>
 				<li><a href="https://rampages.us/coga/aud/brain-function/" aria-label="Brain Function">Brain Function</a></li>
 				<li><a href="https://rampages.us/coga/aud/polygenic-risk-scores/" aria-label="Polygenic Risk Scores">Polygenic Risk Scores</a></li>
 			</ul>
