@@ -1138,13 +1138,10 @@ h3.news-title {
   }
 
   #aud-page-menu--flex li {
-    padding-right: 1em;
+    padding-right: 2em;
   }
 
   #aud-page-menu--flex ul li::before {
-    content: url(../imgs/coga_charm.svg);
-    width: 1.2em;
-    height: .8em;
     display: inline-flex;
   }
 
@@ -1204,9 +1201,6 @@ h3.news-title {
   }
 
   #aud-page-menu ul li::before {
-    content: url(../imgs/coga_charm.svg);
-    width: 1.2em;
-    height: .8em;
     display: inline-flex;
   }
   
