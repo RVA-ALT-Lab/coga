@@ -184,32 +184,32 @@ function aud_neighborhood(){
 const currentPath = window.location.pathname;
 
 if (currentPath === '/coga/aud/genes-in-aud/') {
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/genes-in-aud/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/genes-in-aud/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/genes-in-aud/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/genes-in-aud/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/alcohol-use-across-the-lifespan/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/heritability/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/heritability/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/heritability/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/heritability/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/heritability/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/gene-identification/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/gene-identification/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/gene-identification/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/gene-identification/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/gene-identification/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/response-to-alcohol/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/response-to-alcohol/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/response-to-alcohol/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/response-to-alcohol/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/response-to-alcohol/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/externalizing-alcohol-use-disorders/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/externalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/externalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/externalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/externalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/internalizing-alcohol-use-disorders/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/internalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/internalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/internalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/internalizing-alcohol-use-disorders/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/brain-function/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/brain-function/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/brain-function/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/brain-function/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/brain-function/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/polygenic-risk-scores/'){
-    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/polygenic-risk-scores/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
-    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/polygenic-risk-scores/"]').style.cssText += 'border-bottom: 2px solid #ff462d; font-weight: 700;';
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/polygenic-risk-scores/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/polygenic-risk-scores/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 }
 
 //From https://css-tricks.com/snippets/jquery/smooth-scrolling/
