@@ -19,6 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 	<aside id="aud-page-menu--flex">
+		<div class="aud-menu-title--flex">Alcohol Genetics Sections</div>
 		<ul>
 			<li><a href="https://rampages.us/coga/aud/genes-in-aud/" aria-label="Genes in AUD">How do genes influence the risk for alcohol use disorders?</a></li>
 			<li><a href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/" aria-label="Alcohol use across the lifespan">Alcohol use across the lifespan</a></li>
@@ -48,6 +49,7 @@ defined( 'ABSPATH' ) || exit;
 				?>
 		</article>
 		<aside id="aud-page-menu">
+			<div class="aud-menu-title">Alcohol Genetics Sections</div>
 			<ul>
 				<li><a href="https://rampages.us/coga/aud/genes-in-aud/" aria-label="Genes in AUD">How do genes influence the risk for alcohol use disorders?</a></li>
 				<li><a href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/" aria-label="Alcohol use across the lifespan">Alcohol use across the lifespan</a></li>
@@ -59,6 +61,7 @@ defined( 'ABSPATH' ) || exit;
 				<li><a href="https://rampages.us/coga/aud/brain-function/" aria-label="Brain Function">Brain Function</a></li>
 				<li><a href="https://rampages.us/coga/aud/polygenic-risk-scores/" aria-label="Polygenic Risk Scores">Polygenic Risk Scores</a></li>
 			</ul>
+			<div class="aud-menu-title-bottom"></div>
 		</aside>
 	</div><!-- .entry-content -->
 
