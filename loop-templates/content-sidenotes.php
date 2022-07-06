@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
 	<aside id="aud-page-menu--flex">
 		<div class="aud-menu-title--flex">Alcohol Genetics Sections</div>
 		<ul>
