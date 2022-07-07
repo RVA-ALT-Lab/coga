@@ -1016,6 +1016,12 @@ h3.news-title {
   padding: 0 .3em;
 }
 
+.sidenotes-container p.side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 // .sidenotes-container blockquote p {
 //   border-bottom: 2px solid #046b99;
 //   padding-bottom: 15px;
