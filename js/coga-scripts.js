@@ -192,6 +192,9 @@ if (currentPath === '/coga/aud/genes-in-aud/') {
 } else if (currentPath === '/coga/aud/heritability/'){
     document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/heritability/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
     document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/heritability/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+} else if (currentPath === '/coga/aud/genes-and-environment/'){
+    document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/genes-and-environment/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
+    document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/genes-and-environment/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
 } else if (currentPath === '/coga/aud/gene-identification/'){
     document.querySelector('#aud-page-menu li a[href="https://rampages.us/coga/aud/gene-identification/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
     document.querySelector('#aud-page-menu--flex li a[href="https://rampages.us/coga/aud/gene-identification/"]').style.cssText += 'border-bottom: 2px solid #5f9cb4; font-weight: 700;';
