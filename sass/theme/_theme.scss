@@ -71,6 +71,12 @@ p {
 	line-height: 1.5em;
 }
 
+.grid-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
 /*navbar stuff*/
 .navbar {
 	padding: 0;
@@ -161,6 +167,7 @@ p {
   height: auto;
   padding: 10% 20px;
   border-radius: 10px;
+  font-size: 1em;
 }
 
 .entry-content .nav-button h3:hover{
@@ -760,6 +767,7 @@ h3.news-title {
 
 .monitor h2 {
   color: #fff;
+  font-size: 1.3em;
 }
 
 .inactive.monitor h2, .active.monitor h2 {
@@ -857,7 +865,7 @@ h3.news-title {
   margin: 5px;
   transition: all .4s;
   color: #fff;
-  font-size: 1.5em; 
+  font-size: 1em; 
   padding: 5px 10px;
   opacity: 0;
 }
@@ -923,7 +931,7 @@ h3.news-title {
   padding-left: 170px;
   background-image: url(../imgs/shovel.svg);
   background-position: left top;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
@@ -932,7 +940,9 @@ h3.news-title {
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-
+  .grid-button {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
