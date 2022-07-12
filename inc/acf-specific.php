@@ -91,7 +91,7 @@ function home_nav_menu (){
   // loop through the rows of data
     while ( have_rows('home_info_panels') ) : the_row();
         $slug_title = sanitize_title(get_sub_field('info_title'));
-        echo '<div class="col-md-10 offset-md-1"><div class="list-box">';
+        echo '<div class="col-md-8 offset-md-2"><div class="list-box">';
         echo '<h2 id="' . $slug_title . '">' . get_sub_field('info_title') . '</h2>';
         echo get_sub_field('info_text');
         echo '</div></div>';
