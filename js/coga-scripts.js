@@ -18,7 +18,7 @@ function aud_monitoring(){
       let env = document.getElementById('env');
       let details = document.getElementById('data-details');
       let holder = document.getElementById('parent-data-holder');
-      genes.style.width = '20%';
+      genes.style.width = '25%';
       genes.style.opacity = '100%';
       env.style.width = '60%';
       env.style.opacity = '100%';
@@ -37,7 +37,7 @@ function aud_monitoring(){
       let details = document.getElementById('data-details')
       genes.style.width = '70%';
       genes.style.opacity = '100%';
-      env.style.width = '20%';
+      env.style.width = '25%';
       env.style.opacity = '100%';
       details.innerHTML = "<p>When parents don’t monitor their children closely, children’s genes are far more important in influencing whether or not they are smoking or drinking.</p>";
        highM.classList.remove('active');
