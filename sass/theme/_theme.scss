@@ -288,8 +288,13 @@ p {
   background: $gray;
 }
 
+.blue-button h3 {
+  margin-top: .5em !important;
+}
+
 .blue-button h3 a {
   color: $light-blue;
+  font-size: 1.3rem;
 }
 
 .additional-reading {
@@ -767,7 +772,7 @@ h3.news-title {
 
 .monitor h2 {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .inactive.monitor h2, .active.monitor h2 {
