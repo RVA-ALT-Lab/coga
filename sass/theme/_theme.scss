@@ -1172,7 +1172,7 @@ h3.news-title {
 }
 
 /* For narrow viewports, the sidenote is hidden by default and shown when the checkbox is checked. */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
 
   #aud-page-menu {
     display: none;
@@ -1243,7 +1243,7 @@ h3.news-title {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   
   #aud-page-menu ul {
     list-style-type: none;
