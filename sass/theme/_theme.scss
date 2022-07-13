@@ -994,6 +994,7 @@ h3.news-title {
 .sidenotes-container .article {
   position: relative;
   max-width: 700px;
+  min-width: 700px;
 }
 
 .sidenotes-container .article::before{
@@ -1172,7 +1173,7 @@ h3.news-title {
 }
 
 /* For narrow viewports, the sidenote is hidden by default and shown when the checkbox is checked. */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
 
   #aud-page-menu {
     display: none;
@@ -1198,6 +1199,9 @@ h3.news-title {
   // #aud-page-menu--flex ul li::before {
   //   display: flex;
   // }
+  .sidenotes-container .article {
+    min-width: 0;
+  }
 
   .sidenotes-container p.side-by-side {
     display: flex;
@@ -1243,7 +1247,7 @@ h3.news-title {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   
   #aud-page-menu ul {
     list-style-type: none;
