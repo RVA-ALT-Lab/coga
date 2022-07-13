@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
-
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top &#x2191;</button>
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">

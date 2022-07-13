@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php endif; ?>
 
 	</header><!-- .entry-header -->
-
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top &#x2191;</button>
 	<div class="entry-content">
 		<!-- <div class="row full-width-div" id="top-row">
 			<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full');?>" alt="A portrait of the COGA participants with the COGA logo." width="100%" height="auto" class="aligncenter size-full wp-image-82 img-fluid" id="front-image">

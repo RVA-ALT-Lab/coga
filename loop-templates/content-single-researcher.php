@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
-
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top &#x2191;</button>
 
 	<div class="entry-content">
 

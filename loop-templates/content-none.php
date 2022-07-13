@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'understrap' ); ?></h1>
 
 	</header><!-- .page-header -->
-
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top &#x2191;</button>
 	<div class="page-content">
 
 		<?php

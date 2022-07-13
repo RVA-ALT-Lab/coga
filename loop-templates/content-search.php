@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php endif; ?>
 
 	</header><!-- .entry-header -->
-
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top &#x2191;</button>
 	<div class="entry-summary">
 
 		<?php the_excerpt(); ?>
