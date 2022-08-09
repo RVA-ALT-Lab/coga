@@ -729,8 +729,12 @@ img.fluid {
   color: #efefef;
 }
 
-#wrapper-footer-full p {
+#wrapper-footer-full p, #wrapper-footer-full a {
   color: #efefef;
+}
+
+#wrapper-footer-full a {
+  text-decoration: underline;
 }
 
 #footer-full-content {
