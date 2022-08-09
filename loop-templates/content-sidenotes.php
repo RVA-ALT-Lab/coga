@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 	<aside id="aud-page-menu--flex">
 		<div class="aud-menu-title--flex">Alcohol Genetics Sections</div>
 		<ul>
-			<li>• <a href="https://rampages.us/coga/aud/genes-in-aud/" aria-label="Genes in AUD">How do genes influence the risk for alcohol use disorders?</a></li>
+			<li>• <a href="https://rampages.us/coga/aud/genes-in-aud/" aria-label="Overview">Overview</a></li>
 			<li>• <a href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/" aria-label="Alcohol use across the lifespan">Alcohol Use Across the Lifespan</a></li>
 			<li>• <a href="https://rampages.us/coga/aud/heritability/" aria-label="Heritability">Heritability</a></li>
 			<li>• <a href="https://rampages.us/coga/aud/genes-and-environment/" aria-label="Heritability">Genes and Environment</a></li>
@@ -53,7 +53,7 @@ defined( 'ABSPATH' ) || exit;
 		<aside id="aud-page-menu">
 			<div class="aud-menu-title">Alcohol Genetics Sections</div>
 			<ul>
-				<li><a href="https://rampages.us/coga/aud/genes-in-aud/" aria-label="Genes in AUD">How do genes influence the risk for alcohol use disorders?</a></li>
+				<li><a href="https://rampages.us/coga/aud/genes-in-aud/" aria-label="Overview">Overview</a></li>
 				<li><a href="https://rampages.us/coga/aud/alcohol-use-across-the-lifespan/" aria-label="Alcohol use across the lifespan">Alcohol Use Across the Lifespan</a></li>
 				<li><a href="https://rampages.us/coga/aud/heritability/" aria-label="Heritability">Heritability</a></li>
 				<li><a href="https://rampages.us/coga/aud/genes-and-environment/" aria-label="Heritability">Genes and Environment</a></li>
